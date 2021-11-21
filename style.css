@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  background-clip: border-box;
+}
+
+body {
+    font-size: 15pt;
+    background:#FFFFFF;
+}
+#Display{
+  width: 100vw;
+  height: 100vh;
+  background: #FFFFFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  transition: all .3s ease-in;
+}
+#Display img{
+  width: 30%;
+  filter: drop-shadow(2px 2px 3px #42445A);
+}
+#Display h4{
+  color: #C3C3C4;
+  font-family: 'Poppins', sans-serif;
+}
+#screenS{
+  background: #FFFFFF;
+  color: #000000;
+  width: 100vw;
+  height: 100vh;
+  display: none;
+  transition: all 4s linear;
+  background: url(confetti-scattered-pink-background.jpg);
+  background-size: cover;
+}
