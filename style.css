@@ -42,14 +42,17 @@ body {
 .ml2 {
   font-weight: 900;
   font-size: 2em;
+ 
 }
 
 .ml2 .letter {
   display: inline-block;
   line-height: 1em;
+  opacity: 0;
 }
 #cake{
   width: 90%;
+  opacity: 0;
 }
 .typed-cursor {
   display: none;
@@ -58,4 +61,26 @@ body {
   text-align: left;
   padding: 10px;
   font-family: 'Arya', sans-serif;
+  line-height: 20px;
+  font-size: 12pt;
+  
+}
+#cake{
+  position: relative;
+  height: 306px;
+  overflow: hidden;
+}
+#cake img{
+  width: 306px;
+  position: absolute;
+}
+#F{
+  background: #FFFFFF;
+  z-index: 400;
+  mix-blend-mode: lighten;
+  
+}
+#S{
+  width: 80%;
+  top: 30px;
 }

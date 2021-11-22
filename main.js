@@ -34,37 +34,39 @@ heart.addEventListener("click" , (e)=>{
   setTimeout(()=>{
      ScreenF.style.display="none";
      ScreenS.style.display="block";
-    // anim();
     var typed = new Typed('.element', options);
+    setTimeout(anim,9000);
    } , 1000);
+   
 
 });
 
  var anim = ()=>{
-   anime.timeline({ loop: true })
-     .add({
+   anime.timeline({ loop: false })
+   .add({
+     targets: '#cake',
+     opacity: 1,
+     duration: 1000,
+     easing: "easeOutExpo",
+     delay: 1000,
+     scale:[0 , 1]
+   }).add({
        targets: '.ml2 .letter',
        scale: [4, 1],
-       opacity: [0, 1],
+       opacity: [0 ,1],
        translateZ: 0,
        easing: "easeOutExpo",
        duration: 950,
        delay: (el, i) => 70 * i
-     }).add({
-       targets: '.ml2',
-       opacity: 0,
-       duration: 1000,
-       easing: "easeOutExpo",
-       delay: 1000
      });
  }
 var options = {
-  strings: [`मैं पहले जो कुछ भी था..🥺
+  strings: [`"मैं पहले जो कुछ भी था..🥺
   मैं अब और आगे सिर्फ तुम्हारा रहेना चाहता हूं..🥺
   और रहूंगा भी..🥺❤️
   Remeber always..
   You are mine &
-    I am yours..🥺❤️`],
+    I am yours..🥺❤️"`],
   typeSpeed: 50
 };
 
