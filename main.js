@@ -10,9 +10,6 @@ const burst = new mojs.Burst({
     }
 });
 
-document.addEventListener('click', function(e) {
-  burst.replay();
-});
 anime({
   loop:true,
   targets: 'img',
@@ -30,6 +27,7 @@ heart.addEventListener("click" , (e)=>{
     scale: 0,
     duration: 1000
    });
+   burst.replay();
   setTimeout(()=>{
      ScreenF.style.display="none";
      ScreenS.style.display="block";
