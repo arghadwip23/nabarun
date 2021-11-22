@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Arya&display=swap');
 *{
   margin: 0;
   padding: 0;
-  background-clip: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -36,4 +36,26 @@ body {
   height: 100vh;
   display: none;
   transition: all 4s linear;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.ml2 {
+  font-weight: 900;
+  font-size: 2em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+#cake{
+  width: 90%;
+}
+.typed-cursor {
+  display: none;
+}
+.element{
+  text-align: left;
+  padding: 10px;
+  font-family: 'Arya', sans-serif;
 }
