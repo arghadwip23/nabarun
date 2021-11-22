@@ -36,6 +36,4 @@ body {
   height: 100vh;
   display: none;
   transition: all 4s linear;
-  background: url(confetti-scattered-pink-background.jpg);
-  background-size: cover;
 }
