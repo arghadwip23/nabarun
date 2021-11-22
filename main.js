@@ -9,6 +9,16 @@ const burst = new mojs.Burst({
       radius: 10
     }
 });
+const flare = new mojs.Burst({
+  radius: { 0: 100 },
+  count: 10,
+  degree: Math.floor(Math.random()*360)+2,
+  children: {
+    fill: { 'red': 'red' },
+    duration: 900,
+    radius: 10
+  }
+});
 
 anime({
   loop:true,
@@ -35,6 +45,7 @@ heart.addEventListener("click" , (e)=>{
      ScreenF.style.display="none";
      ScreenS.style.display="block";
     var typed = new Typed('.element', options);
+    myFunction();
     setTimeout(anim,9000);
    } , 1000);
    
@@ -69,4 +80,10 @@ var options = {
     I am yours..🥺❤️"`],
   typeSpeed: 50
 };
+
+function myFunction() {
+  flare.generate();
+  flare.tune({x:Math.random()*50, y:Math.random()*50}).replay();
+  setTimeout(myFunction, Math.floor(Math.random() * 100)+900);
+}
 
