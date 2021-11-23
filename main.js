@@ -60,6 +60,17 @@ heart.addEventListener("click" , (e)=>{
        easing: "easeOutExpo",
        duration: 950,
        delay: (el, i) => 70 * i
+     }).add({
+       targets: "h2",
+       scale : [2 , 1],
+       opacity: 1 ,
+       easing : "easeOutExpo",
+       duration: 300
+     }).add({
+       targets : "sub",
+       opacity:1,
+       easing: "easeOutExpo",
+       duration: 400
      });
  }
 var options = {
