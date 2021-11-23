@@ -38,8 +38,11 @@ body {
   height: 100vh;
   display: none;
   transition: all 4s linear;
-  padding: 20px;
-  overflow-x: hidden;
+  padding: 0 20px;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .ml2 {
   font-weight: 900;
@@ -99,4 +102,11 @@ sub{
   float: right;
   font-family: 'Poppins', sans-serif;
   color: #AEAEAE;
+}
+#my-canvas{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
 }

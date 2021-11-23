@@ -9,16 +9,6 @@ const burst = new mojs.Burst({
       radius: 10
     }
 });
-const flare = new mojs.Burst({
-  radius: { 0: 100 },
-  count: 10,
-  degree: Math.floor(Math.random()*360)+2,
-  children: {
-    fill: { 'red': 'red' },
-    duration: 900,
-    radius: 10
-  }
-});
 
 anime({
   loop:true,
@@ -34,6 +24,7 @@ textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='let
 var heart = document.getElementById("heart");
 var ScreenF = document.getElementById("Display");
 var ScreenS = document.getElementById("screenS");
+var audio = document.getElementById('audio');
 heart.addEventListener("click" , (e)=>{
   anime({
     targets:["#Display img" , "h4"],
@@ -43,9 +34,9 @@ heart.addEventListener("click" , (e)=>{
    burst.replay();
   setTimeout(()=>{
      ScreenF.style.display="none";
-     ScreenS.style.display="block";
+     ScreenS.style.display="flex";
+     audio.play();
     var typed = new Typed('.element', options);
-    myFunction();
     setTimeout(anim,9000);
    } , 1000);
    
@@ -81,9 +72,8 @@ var options = {
   typeSpeed: 50
 };
 
-function myFunction() {
-  flare.generate();
-  flare.tune({x:Math.random()*50, y:Math.random()*50}).replay();
-  setTimeout(myFunction, Math.floor(Math.random() * 100)+900);
-}
+var confettiSettings = { target: 'my-canvas' };
+var confetti = new ConfettiGenerator(confettiSettings);
+confetti.render();
+
 
