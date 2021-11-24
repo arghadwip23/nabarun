@@ -90,7 +90,7 @@ body {
 }
 #S{
   width: 80%;
-  top: 30px;
+  top: 0;
 }
 h2{
   font-family: 'Courgette', cursive;
@@ -113,4 +113,11 @@ sub{
   left: 0;
   height: 100vh;
   width: 100vw;
+}
+p{
+  position: fixed;
+  font-family: Poppins ;
+  color: #969696;
+  top :88vh;
+  font-size: 10pt;
 }

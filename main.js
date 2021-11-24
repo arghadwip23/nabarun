@@ -28,9 +28,9 @@ const burst = new mojs.Burst({
     count: 10,
     degree: 360,
     children: {
-      fill: { 'red': 'red' },
+      fill: { 'black': 'grey' },
       duration: 1000,
-      radius: 10
+      radius: 20
     }
 });
 
@@ -98,13 +98,8 @@ heart.addEventListener("click" , (e)=>{
      });
  }
 var options = {
-  strings: [`"मैं पहले जो कुछ भी था..🥺
-  मैं अब और आगे सिर्फ तुम्हारा रहना चाहता हूं..🥺
-  और रहूंगा भी..🥺❤️
-  Remeber always..
-  You are mine &amp;
-    I am yours..🥺❤️"`],
-  typeSpeed: 40
+  strings: [`"Count not the candles…see the lights they give. Count not the years, but the life you live. Wishing you a wonderful time ahead"`],
+  typeSpeed: 45
 };
 
 var confettiSettings = { target: 'my-canvas' };
